@@ -1,0 +1,13 @@
+prefix=C:/CreditCardDefaultPrediction-AdaBoost/myvenv/Library
+exec_prefix=C:/CreditCardDefaultPrediction-AdaBoost/myvenv/Library
+libdir=C:/CreditCardDefaultPrediction-AdaBoost/myvenv/Library/lib
+sharedlibdir=C:/CreditCardDefaultPrediction-AdaBoost/myvenv/Library/lib
+includedir=C:/CreditCardDefaultPrediction-AdaBoost/myvenv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
