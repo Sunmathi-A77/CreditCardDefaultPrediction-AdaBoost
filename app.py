@@ -6,7 +6,7 @@ import pickle
 # -------------------------------
 # Load trained AdaBoost model
 # -------------------------------
-with open('adaboost_model.pkl', 'rb') as f:
+with open('credit_default_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # -------------------------------
@@ -67,7 +67,7 @@ def preprocess_input(df):
 # Input fields with columns
 # -------------------------------
 st.header("📋 Enter Customer Information")
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     LIMIT_BAL = st.number_input("💳 Credit Limit (LIMIT_BAL)", min_value=0, value=20000)
@@ -91,6 +91,8 @@ with col3:
     BILL_AMT4 = st.number_input("💰 Bill Amount 4", min_value=0, value=5000)
     BILL_AMT5 = st.number_input("💰 Bill Amount 5", min_value=0, value=5000)
     BILL_AMT6 = st.number_input("💰 Bill Amount 6", min_value=0, value=5000)
+
+with col4:
     PAY_AMT1 = st.number_input("💵 Payment Amount 1", min_value=0, value=2000)
     PAY_AMT2 = st.number_input("💵 Payment Amount 2", min_value=0, value=2000)
     PAY_AMT3 = st.number_input("💵 Payment Amount 3", min_value=0, value=2000)
