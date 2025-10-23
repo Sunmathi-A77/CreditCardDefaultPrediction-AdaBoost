@@ -22,7 +22,7 @@ Target variable: default
 
 1 → Default
 
-Features include:
+### Features include:
 
 LIMIT_BAL, AGE, SEX, EDUCATION, MARRIAGE
 
@@ -36,25 +36,25 @@ Payment amounts: PAY_AMT1 to PAY_AMT6
 
 1. Clone the repository
 
-git clone <your_repo_link>
+   git clone <your_repo_link>
 
-cd CreditCardDefaultPrediction-AdaBoost
+   cd CreditCardDefaultPrediction-AdaBoost
 
 2. Create and activate virtual environment
 
-python -m venv myvenv
+   python -m venv myvenv
 
-myvenv\Scripts\activate    # Windows
+   myvenv\Scripts\activate    # Windows
 
-source myvenv/bin/activate    # Mac/Linux
+   source myvenv/bin/activate    # Mac/Linux
 
 3. Install dependencies
 
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 4. Run Streamlit App
    
-streamlit run app.py
+   streamlit run app.py
 
 ## 🛠 Steps Performed
 
@@ -139,11 +139,17 @@ learning_rate = 0.1
 ## 🗂 File Structure
 
 CreditCardDefaultPrediction-AdaBoost/
+
 │
+
 ├─ app.py                   # Streamlit application
+
 ├─ credit_default_model.pkl # Trained AdaBoost model
+
 ├─ notebook.ipynb           # Jupyter notebook for model training & evaluation
+
 ├─ requirements.txt         # Python dependencies
+
 ├─ README.md                # Project documentation
 
 ## 🎨 UI Features
