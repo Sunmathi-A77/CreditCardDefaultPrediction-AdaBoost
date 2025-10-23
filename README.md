@@ -139,6 +139,7 @@ learning_rate = 0.1
 ## 🗂 File Structure
 
 CreditCardDefaultPrediction-AdaBoost/
+
 │
 
 ├─ app.py                         # Streamlit application
